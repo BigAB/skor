@@ -2,6 +2,29 @@
 
 A cool JS Library
 
-[Library Documentation](./lib)
+## :mag_right: Usage
 
-[Examples](./examples)
+```ts
+const skor = new Skor();
+
+const unsubscribe = skor.subscribe();
+
+// ...later
+unsubscribe();
+```
+
+## :card_file_box: Examples
+
+See [examples](./examples)
+
+## :book: API Docs
+
+See [API Documentation](./lib)
+
+## :seedling: Contribute
+
+Think you'd like to contribute to this project? Check out our [contributing guideline](./CONTRIBUTING.md) and feel free to create issues and pull requests!
+
+## License
+
+MIT © [Adam L Barrett](./LICENSE)
