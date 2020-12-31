@@ -57,5 +57,15 @@
       "<rootDir>/**/*(spec|test).{ts,tsx,js,jsx}",
       "<rootDir>/**/*.(spec|test).{ts,tsx,js,jsx}"
     ]
+  },
+  "release-it": {
+    "github": {
+      "before:init": [
+        "npm run lint",
+        "npm test",
+        "npm build"
+      ],
+      "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+    }
   }
 }
