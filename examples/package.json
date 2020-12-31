@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+  },
+  "dependencies": {
+    "skor": "*"
+  },
+  "devDependencies": {
+    "rollup": "^2.35.1",
+    "snowpack": "^2.18.4",
+    "snowpack-plugin-rollup-bundle": "^0.3.3"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

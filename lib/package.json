@@ -1,0 +1,65 @@
+{
+  "name": "skor",
+  "author": "BigAB <bigab@live.ca>",
+  "version": "0.0.1",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigAB/skor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BigAB/skor/issues"
+  },
+  "homepage": "https://github.com/BigAB/skor#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/skor.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=15"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "commitizen": "^4.2.2",
+    "husky": "^4.3.6",
+    "release-it": "^14.2.2",
+    "size-limit": "^4.9.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.3"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/**/*(spec|test).{ts,tsx,js,jsx}",
+      "<rootDir>/**/*.(spec|test).{ts,tsx,js,jsx}"
+    ]
+  }
+}

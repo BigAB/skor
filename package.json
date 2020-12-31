@@ -1,0 +1,28 @@
+{
+  "name": "skor-project",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "lib",
+    "examples"
+  ],
+  "scripts": {
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "commitizen": "^4.2.2",
+    "size-limit": "^4.9.1"
+  },
+  "size-limit": [
+    {
+      "path": "lib/dist/lib.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "lib/dist/lib.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
