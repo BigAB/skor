@@ -59,11 +59,13 @@
     ]
   },
   "release-it": {
-    "before:init": [
-      "npm run lint",
-      "npm test",
-      "npm build"
-    ],
-    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+    "hooks": {
+      "before:init": [
+        "npm run lint",
+        "npm test",
+        "npm build"
+      ],
+      "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+    }
   }
 }
