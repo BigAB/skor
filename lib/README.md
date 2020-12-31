@@ -35,7 +35,7 @@ See [examples](../examples)
 
 The `Skor` class.
 
-## Testing
+## :test_tube: Testing
 
 ## :seedling: Contribute
 
