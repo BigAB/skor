@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.1",
