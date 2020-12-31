@@ -1,7 +1,7 @@
 {
   "name": "skor",
   "author": "BigAB <bigab@live.ca>",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
