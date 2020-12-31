@@ -2,6 +2,6 @@
 
 A cool JS Library
 
-[Library Documentation](./src)
+[Library Documentation](./lib)
 
 [Examples](./examples)
