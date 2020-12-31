@@ -19,7 +19,7 @@ See [examples](./examples)
 
 ## :book: API Docs
 
-See [API Documentation](./lib)
+See [API Documentation](./lib#readme)
 
 ## :seedling: Contribute
 
