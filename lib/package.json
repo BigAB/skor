@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/BigAB/skor/issues"
   },
-  "homepage": "https://github.com/BigAB/skor#readme",
+  "homepage": "https://github.com/BigAB/skor/tree/main/lib#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/skor.esm.js",
