@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node: ['15.x']
+        node: ['24.x']
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
