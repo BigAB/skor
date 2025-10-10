@@ -3,6 +3,7 @@ name: Scheduled Issues
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
 
 jobs:
   process-scheduled-issue:
