@@ -18,7 +18,7 @@ jobs:
     if: github.event_name == 'issues'
     steps:
       - name: Process scheduled issue
-        uses: BigAB/scheduled-issues@v0.0.3
+        uses: BigAB/scheduled-issues@v0.0.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -27,6 +27,6 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Reopen scheduled issues
-        uses: BigAB/scheduled-issues/reopen@v0.0.3
+        uses: BigAB/scheduled-issues/reopen@v0.0.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
