@@ -1,0 +1,20 @@
+name: Process Scheduled Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  process-scheduled-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Process scheduled issue
+        uses: BigAB/scheduled-issues@v0.0.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
