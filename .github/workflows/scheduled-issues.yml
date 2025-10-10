@@ -1,4 +1,4 @@
-name: Process Scheduled Issues
+name: Scheduled Issues
 
 on:
   issues:
@@ -11,10 +11,10 @@ jobs:
       issues: write
       contents: read
     steps:
-      - uses: actions/checkout@v5
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Process scheduled issue
+        uses: BigAB/scheduled-issues@v1
         with:
-          node-version: '24.x'
-      - name: Install dependencies
-        run: npm install
+          github-token: ${{ secrets.GITHUB_TOKEN }}
