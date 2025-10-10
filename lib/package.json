@@ -33,7 +33,7 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "commitizen": "^4.2.2",
+    "commitizen": "^4.3.1",
     "husky": "^4.3.6",
     "release-it": "^14.2.2",
     "tsdx": "^0.14.1",
