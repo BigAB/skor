@@ -16,6 +16,6 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Process scheduled issue
-        uses: BigAB/scheduled-issues@v1
+        uses: BigAB/scheduled-issues@v0.0.2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
